@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --flipkart-blue: #2778ec;
+    --category-color: #475569;
+}
+html {
+}
+
+.page-container {
+    margin-inline: auto;
+}
+
+header {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--flipkart-blue);
+    justify-content: center;
+    padding: 1rem 0rem;
+}
+
+.logo {
+    width: 8rem;
+}
+.header-actions-container {
+    display: flex;
+    gap: 2rem;
+}
+
+header>div>input {
+    margin-right: auto;
+    background-image: url('assets/search.png');
+    background-size: 1.4em;
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+    min-width: 10rem;
+    width: 35rem;
+    padding: 0.5rem;
+    border: solid white 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 0.8rem;
+    
+}
+
+.login {
+    color: var(--flipkart-blue);
+    font-weight: bold;
+    background-color: white;
+    padding: 0.5rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#more {
+    background-color: var(--flipkart-blue);
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 1rem;
+}
+
+.header-item-container {
+    display: flex;
+    width: 65%;
+    gap: 1.5rem;
+    align-items: center;
+}
+img {
+    width: 2rem;
+    height: auto;
+}
+
+.cart-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.shopping-cart-icon {
+    filter: invert(1);
+}
+
+.cart {
+    color: white;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    margin: 1.5rem 0rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding-bottom: 1rem;
+}
+
+.category-name {
+    text-wrap: balance;
+    width: min-content
+}
+
+.category-image {
+    width: 5rem;
+}
+
+.category-name {
+    color: var(--category-color);
+    font-weight: bold;
+}
+
+.deals-slider {
+    display: flex;
+    gap: 3rem;
+}
+.product-image {
+    width: 10rem;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.product-container>div {
+    text-align: center;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-discounts {
+    color: green;
+}
+
+.product-description {
+    color: var(--category-color);
+}
