@@ -6,8 +6,11 @@
 :root {
     --flipkart-blue: #2778ec;
     --category-color: #475569;
+    --page-background-color: #f1f2f4;
 }
-html {
+
+body {
+    background-color: var(--page-background-color);
 }
 
 .page-container {
@@ -61,6 +64,10 @@ header>div>input {
     font-size: 1rem;
 }
 
+.section-container>div {
+    margin-top: 2rem;
+}
+
 .header-item-container {
     display: flex;
     width: 65%;
@@ -90,10 +97,10 @@ nav{
     display: flex;
     gap: 5rem;
     justify-content: center;
-    margin: 1.5rem 0rem;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    padding-bottom: 1rem;
+    padding: 1rem 0rem;
+    overflow: auto;
 }
 
 .category-name {
@@ -110,9 +117,22 @@ nav{
     font-weight: bold;
 }
 
+.section-container {
+    max-width: 85%;
+    margin-inline: auto;
+}
+
+.deals-of-the-day-container {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 .deals-slider {
     display: flex;
     gap: 3rem;
+    align-items: center;
+    padding: 2rem 1rem;
+    overflow: auto;
 }
 .product-image {
     width: 10rem;
@@ -137,4 +157,44 @@ nav{
 
 .product-description {
     color: var(--category-color);
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    border-bottom: var(--page-background-color) solid 3px;
+}
+
+.title-and-shop-now {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+time,.promotional-text {
+    color: gray;
+}
+.additional-info {
+    margin-right: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+button.view-all-deals {
+    color: white;
+    background-color: var(--flipkart-blue);
+    padding: 0.6rem 1.2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.discount-category-container {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
