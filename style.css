@@ -1,6 +1,12 @@
 * {
     margin: 0px;
     box-sizing: border-box;
+    font-family: Poppins;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('./assets/fonts/Poppins-Regular.ttf');
 }
 
 :root {
@@ -26,6 +32,7 @@ body {
 
 .page-container {
     margin-inline: auto;
+    padding-bottom: 2rem;
 }
 
 header {
@@ -122,18 +129,23 @@ nav{
     max-width: 95%;
 }
 
-.category-name {
-    text-wrap: balance;
-    width: min-content
+.category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
+
 .category-image {
-    width: 5rem;
+    width: 4rem;
 }
 
 .category-name {
     color: var(--category-color);
     font-weight: bold;
+    width: max-content;
+    font-size: 0.85rem;
 }
 
 .section-container {
@@ -210,6 +222,7 @@ time,.promotional-text {
     margin-right: auto;
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 button.view-all-deals {
