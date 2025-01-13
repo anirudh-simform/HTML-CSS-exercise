@@ -269,7 +269,7 @@ button.view-all-deals {
     }
 
     .header-item-container {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .search-bar-bottom {
@@ -292,6 +292,18 @@ button.view-all-deals {
 
     .combined-container {
         flex-wrap: wrap;
+    }
+
+    .ad {
+        margin: auto;
+    }
+
+    .logo {
+        width: 10rem;
+    }
+
+    .header-actions-container {
+        gap: 1rem;
     }
 }
 
