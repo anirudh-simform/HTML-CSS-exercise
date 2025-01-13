@@ -9,8 +9,19 @@
     --page-background-color: #f1f2f4;
 }
 
+html {}
+
 body {
     background-color: var(--page-background-color);
+}
+
+.login-icon {
+    display: none;
+    filter: invert(1);
+}
+
+.search-bar-bottom {
+    display: none;
 }
 
 .page-container {
@@ -39,8 +50,9 @@ header>div>input {
     background-size: 1.4em;
     background-repeat: no-repeat;
     background-position: 97% 50%;
-    min-width: 10rem;
-    width: 35rem;
+    min-width: 16rem;
+    max-width: 31rem;
+    flex: 1;
     padding: 0.5rem;
     border: solid white 1px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -94,13 +106,20 @@ img {
     font-weight: bold;
 }
 nav{
-    display: flex;
-    gap: 5rem;
-    justify-content: center;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    justify-content: center;
+}
+
+.category-list {
+    display: flex;
+    gap: 4%;
+    justify-content: flex-start;
     padding: 1rem 0rem;
     overflow: auto;
+    min-width: 80%;
+    max-width: 95%;
 }
 
 .category-name {
@@ -125,8 +144,18 @@ nav{
 .deals-of-the-day-container {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    overflow: auto;
 }
 
+.ad {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 14rem;
+}
+
+.combined-container {
+    display: flex;
+    gap: 1rem;
+}
 .deals-slider {
     display: flex;
     gap: 3rem;
@@ -197,4 +226,73 @@ button.view-all-deals {
 .discount-category-container {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.category-name {
+    text-align: center;
+}
+
+
+@media (max-width: 1098px) {
+    .cart,.login {
+        display: none;
+    }
+
+    .login-icon {
+        display: block;
+    };
+}
+
+@media (max-width: 970px) {
+    .header-item-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 648px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-item-container {
+        justify-content: center;
+    }
+
+    .search-bar-bottom {
+        display: block;
+        border: solid 1px white;
+        border-radius: 3px;
+        height: 1.5rem;
+        background-image: url(assets/search.png);
+        background-size: 1.4em;
+        background-repeat: no-repeat;
+        background-position: 97% 50%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    header>div>input {
+        display: none;
+    }
+
+    .combined-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 360px) {
+    .title-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .additional-info,.title-and-shop-now {
+        margin-right: 0px;
+    }
+
+    button.view-all-deals {
+        align-self: flex-end;
+    }
 }
