@@ -203,9 +203,10 @@ nav{
 .title-container {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 1rem;
     border-bottom: var(--page-background-color) solid 3px;
+    flex-wrap: wrap;
 }
 
 .title-and-shop-now {
@@ -234,6 +235,7 @@ button.view-all-deals {
     font-weight: bold;
     border-radius: 0.1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-left: auto;
 }
 
 .discount-category-container {
