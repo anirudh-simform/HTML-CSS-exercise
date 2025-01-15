@@ -6,8 +6,8 @@
 
 ## Mobile Screenshot
 
-![alt text](screenshots/Mobile%20Screenshot.jpeg)
+![alt text](screenshots/Mobile%20Screenshot.png)
 
 ## Tablet Screenshot
 
-![alt text](screenshots/Tablet%20Screenshot.jpeg)
+![alt text](screenshots/Tablet%20Screenshot.png)
